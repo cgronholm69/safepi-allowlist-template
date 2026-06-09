@@ -1,0 +1,62 @@
+# ============================================================
+# SafePi Policy Configuration — Public Library
+# ============================================================
+# Edit this file and commit it to your SafePi allowlist repository.
+# SafePi checks this file on every sync (default: every 15 minutes).
+# ============================================================
+
+# ------------------------------------------------------------
+# SCHEDULES
+# Windows are evaluated top-to-bottom; first match wins.
+# A 'default' entry acts as the catch-all when no window matches.
+#
+# allowlist: filename   — serve this allowlist file
+# allowlist: none       — block all outbound traffic
+# ------------------------------------------------------------
+schedules:
+
+  # Staffed hours Monday–Friday: full public access
+  - name: weekday_open
+    days: [mon, tue, wed, thu, fri]
+    time: "09:00-19:00"
+    allowlist: allowlist.txt
+
+  # Staffed hours Saturday: full public access
+  - name: saturday_open
+    days: [sat]
+    time: "10:00-16:00"
+    allowlist: allowlist.txt
+
+  # Early morning self-service Monday–Friday (before staff arrive)
+  # Restricted access for returning books, checking accounts
+  - name: weekday_selfservice
+    days: [mon, tue, wed, thu, fri]
+    time: "07:00-09:00"
+    allowlist: allowlist_restricted.txt
+
+  # Evening self-service Monday–Friday (after staff leave)
+  - name: weekday_evening
+    days: [mon, tue, wed, thu, fri]
+    time: "19:00-21:00"
+    allowlist: allowlist_restricted.txt
+
+  # Outside all hours: terminals locked
+  - name: default
+    allowlist: none
+
+
+# ------------------------------------------------------------
+# SAFE SEARCH [PREMIUM · SafeDNS Guard required]
+# Forces Google, Bing, and DuckDuckGo into safe/restricted mode
+# via DNS rewriting. No client configuration needed.
+# Recommended: true for libraries, schools, and care facilities.
+# ------------------------------------------------------------
+safe_search: false
+
+
+# ------------------------------------------------------------
+# YOUTUBE RESTRICTED MODE [PREMIUM · SafeDNS Guard required]
+# Forces YouTube into restricted mode via DNS rewriting.
+# Has no effect if youtube.com is not in your allowlist.
+# ------------------------------------------------------------
+youtube_restricted: false

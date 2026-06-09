@@ -1,0 +1,59 @@
+# ============================================================
+# SafePi Library Allowlist — Opening Hours
+# General public access during staffed hours
+# ============================================================
+
+# --- News & Media ---
+hs.fi
+yle.fi
+il.fi
+is.fi
+hbl.fi
+svt.se
+bbc.com
+reuters.com
+theguardian.com
+
+# --- Reference & Education ---
+wikipedia.org
+kansalliskirjasto.fi
+finna.fi
+helmet.fi
+britannica.com
+wolframalpha.com
+khanacademy.org
+
+# --- Government & Public Services ---
+suomi.fi
+vero.fi
+kela.fi
+te-palvelut.fi
+hel.fi
+espoo.fi
+tampere.fi
+
+# --- Search ---
+google.com
+bing.com
+duckduckgo.com
+
+# --- Communication ---
+outlook.com
+gmail.com
+
+# --- Maps & Transport ---
+maps.google.com
+hsl.fi
+vr.fi
+finavia.fi
+
+# --- Health ---
+terveyskyla.fi
+mielenterveystalo.fi
+
+# --- Culture & Libraries ---
+helmet.fi
+kirjastot.fi
+museokortti.fi
+kansallisteatteri.fi
+oopperabaletti.fi

@@ -1,0 +1,27 @@
+# ============================================================
+# SafePi Library Allowlist — Unstaffed / Restricted Hours
+# Minimal access for self-service terminals outside staffed hours
+# ============================================================
+
+# --- News ---
+yle.fi
+hs.fi
+
+# --- Reference ---
+wikipedia.org
+finna.fi
+helmet.fi
+
+# --- Government & Public Services ---
+suomi.fi
+vero.fi
+kela.fi
+hel.fi
+
+# --- Search ---
+google.com
+duckduckgo.com
+
+# --- Maps & Transport ---
+hsl.fi
+vr.fi
